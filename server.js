@@ -53,7 +53,12 @@ function getCorsConfig() {
   }
 }
 
-app.use(cors(getCorsConfig()));
+app.use(
+  cors({
+    origin: ["https://novamusic.netlify.app"],
+    credentials: true,
+  })
+);
 
 const authRoutes = require("./api/auth/auth.routes");
 const userRoutes = require("./api/user/user.routes");
