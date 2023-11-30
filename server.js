@@ -36,8 +36,7 @@ function getCorsConfig() {
 
   if (process.env.NODE_ENV === "production") {
     return cors({
-      // origin: ["https://novamusic.netlify.app"],
-      origin: ["*"],
+      origin: ["https://novamusic.netlify.app/"],
       ...commonOpts,
     });
   } else {
@@ -53,12 +52,7 @@ function getCorsConfig() {
   }
 }
 
-app.use(
-  cors({
-    origin: ["https://novamusic.netlify.app"],
-    credentials: true,
-  })
-);
+app.use(cors(getCorsConfig()));
 
 const authRoutes = require("./api/auth/auth.routes");
 const userRoutes = require("./api/user/user.routes");
