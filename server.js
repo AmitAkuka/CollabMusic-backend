@@ -36,7 +36,7 @@ function getCorsConfig() {
 
   if (process.env.NODE_ENV === "production") {
     return cors({
-      origin: ["https://novamusic.netlify.app/"],
+      origin: ["https://novamusic.netlify.app"],
       ...commonOpts,
     });
   } else {
