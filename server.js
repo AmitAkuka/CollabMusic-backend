@@ -11,20 +11,48 @@ const PORT = 3030;
 app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 // app.use(express.bodyParser({ limit: '50mb' }))
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.resolve(__dirname, "public/build")));
-} else {
-  const corsOptions = {
-    origin: [
-      "http://127.0.0.1:5173",
-      "http://localhost:5173",
-      "http://127.0.0.1:3000",
-      "http://localhost:3000",
-    ],
+
+//Old heroku deployment - we no longer put the frontend build file inside public
+//Netlify is hosting front and railway host the backend.
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.resolve(__dirname, "public/build")));
+// } else {
+//   const corsOptions = {
+//     origin: [
+//       "http://127.0.0.1:5173",
+//       "http://localhost:5173",
+//       "http://127.0.0.1:3000",
+//       "http://localhost:3000",
+//     ],
+//     credentials: true,
+//   };
+//   app.use(cors(corsOptions));
+// }
+
+function getCorsConfig() {
+  const commonOpts = {
     credentials: true,
   };
-  app.use(cors(corsOptions));
+
+  if (process.env.NODE_ENV === "production") {
+    return cors({
+      origin: ["https://novamusic.netlify.app"],
+      ...commonOpts,
+    });
+  } else {
+    return cors({
+      origin: [
+        "http://127.0.0.1:5173",
+        "http://localhost:5173",
+        "http://127.0.0.1:3000",
+        "http://localhost:3000",
+      ],
+      ...commonOpts,
+    });
+  }
 }
+
+app.use(cors(getCorsConfig()));
 
 const authRoutes = require("./api/auth/auth.routes");
 const userRoutes = require("./api/user/user.routes");
