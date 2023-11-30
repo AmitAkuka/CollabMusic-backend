@@ -52,6 +52,8 @@ function getCorsConfig() {
   }
 }
 
+console.log({corsConfig: getCorsConfig()});
+
 app.use(cors(getCorsConfig()));
 
 const authRoutes = require("./api/auth/auth.routes");
