@@ -13609,3 +13609,66 @@
 30.11.2023, 13:14:42 - INFO - New connected socket [id: FkBC44MJgOEPg3EkAAAB] 
 30.11.2023, 13:14:50 - INFO - Server is running on port: 3030 
 30.11.2023, 13:14:51 - INFO - New connected socket [id: 1HMgRt8v_CZ11QUIAAAB] 
+30.11.2023, 13:19:35 - INFO - Server is running on port: 3030 
+30.11.2023, 13:19:35 - INFO - New connected socket [id: bSQThFM1dU9T3E2aAAAB] 
+30.11.2023, 13:24:38 - INFO - Server is running on port: 3030 
+30.11.2023, 13:24:38 - INFO - New connected socket [id: QG6-XfYgpwco0SCLAAAB] 
+30.11.2023, 13:24:43 - INFO - Server is running on port: 3030 
+30.11.2023, 13:24:44 - INFO - New connected socket [id: inwiztfI6ToWfC0bAAAB] 
+30.11.2023, 13:24:51 - INFO - Server is running on port: 3030 
+30.11.2023, 13:24:52 - INFO - New connected socket [id: 2M9sWTJ6iOCYrKUmAAAB] 
+30.11.2023, 13:25:06 - INFO - Server is running on port: 3030 
+30.11.2023, 13:25:07 - INFO - New connected socket [id: jwHXKx6-tXrlfaBpAAAB] 
+30.11.2023, 13:25:28 - INFO - Socket disconnected [id: jwHXKx6-tXrlfaBpAAAB] 
+30.11.2023, 13:25:29 - INFO - user Admin has joined chat room 1000. socketId: vrWGt8DH_SG9b-Q3AAAD 
+30.11.2023, 13:25:29 - INFO - New connected socket [id: vrWGt8DH_SG9b-Q3AAAD] 
+30.11.2023, 13:25:31 - INFO - user socketId: vrWGt8DH_SG9b-Q3AAAD has disconnected room 1000. 
+30.11.2023, 13:25:31 - INFO - Socket disconnected [id: vrWGt8DH_SG9b-Q3AAAD] 
+30.11.2023, 13:25:34 - INFO - New connected socket [id: 9CeI-prdpLwN_efFAAAF] 
+30.11.2023, 13:25:34 - INFO - user Admin has joined chat room 1000. socketId: 9CeI-prdpLwN_efFAAAF 
+30.11.2023, 13:26:15 - INFO - user socketId: 9CeI-prdpLwN_efFAAAF has disconnected room 1000. 
+30.11.2023, 13:26:15 - INFO - Socket disconnected [id: 9CeI-prdpLwN_efFAAAF] 
+30.11.2023, 13:27:38 - INFO - New connected socket [id: 0SViHP33bbjabQxAAAAH] 
+30.11.2023, 13:27:38 - INFO - user Admin has joined chat room 1000. socketId: 0SViHP33bbjabQxAAAAH 
+30.11.2023, 13:27:42 - INFO - user socketId: 0SViHP33bbjabQxAAAAH has disconnected room 1000. 
+30.11.2023, 13:27:42 - INFO - Socket disconnected [id: 0SViHP33bbjabQxAAAAH] 
+30.11.2023, 13:56:02 - ERROR - Failed to verify token | BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer (userId: 650d83a022cf07f05e941332)
+30.11.2023, 13:56:07 - DEBUG - auth.service - login with username: Admin (userId: 650d83a022cf07f05e941332)
+30.11.2023, 13:56:08 - INFO - User login:  | Admin (userId: 650d83a022cf07f05e941332)
+30.11.2023, 13:56:08 - INFO - user Admin has joined chat room 1000. socketId: azrvdb4mqNo3x44AAAAJ 
+30.11.2023, 13:56:08 - INFO - New connected socket [id: azrvdb4mqNo3x44AAAAJ] 
+30.11.2023, 13:56:11 - INFO - Socket disconnected [id: azrvdb4mqNo3x44AAAAJ] 
+30.11.2023, 13:56:11 - INFO - user socketId: azrvdb4mqNo3x44AAAAJ has disconnected room 1000. 
+30.11.2023, 13:56:36 - INFO - New connected socket [id: jSQPoMC4oFwZYlfaAAAL] 
+30.11.2023, 13:56:36 - INFO - user Admin has joined chat room 1000. socketId: jSQPoMC4oFwZYlfaAAAL 
+30.11.2023, 13:56:38 - INFO - Socket disconnected [id: jSQPoMC4oFwZYlfaAAAL] 
+30.11.2023, 13:56:38 - INFO - user socketId: jSQPoMC4oFwZYlfaAAAL has disconnected room 1000. 
+30.11.2023, 13:56:38 - INFO - New connected socket [id: iMYii8rwbNCm8XVEAAAN] 
+30.11.2023, 13:56:38 - INFO - user Admin has joined chat room 1000. socketId: iMYii8rwbNCm8XVEAAAN 
+30.11.2023, 13:56:44 - INFO - Socket disconnected [id: iMYii8rwbNCm8XVEAAAN] 
+30.11.2023, 13:56:44 - INFO - user socketId: iMYii8rwbNCm8XVEAAAN has disconnected room 1000. 
+30.11.2023, 13:56:46 - INFO - New connected socket [id: X_SP9qg59cu-5dVXAAAP] 
+30.11.2023, 13:56:46 - INFO - user Admin has joined chat room 1000. socketId: X_SP9qg59cu-5dVXAAAP 
+30.11.2023, 13:57:04 - INFO - Socket disconnected [id: X_SP9qg59cu-5dVXAAAP] 
+30.11.2023, 13:57:04 - INFO - user socketId: X_SP9qg59cu-5dVXAAAP has disconnected room 1000. 
+30.11.2023, 13:57:05 - INFO - New connected socket [id: kfqnGfOMK1lo1qlXAAAR] 
+30.11.2023, 13:57:05 - INFO - user Admin has joined chat room 1000. socketId: kfqnGfOMK1lo1qlXAAAR 
+30.11.2023, 14:04:37 - INFO - user socketId: kfqnGfOMK1lo1qlXAAAR has disconnected room 1000. 
+30.11.2023, 14:04:37 - INFO - Socket disconnected [id: kfqnGfOMK1lo1qlXAAAR] 
+30.11.2023, 14:04:38 - INFO - New connected socket [id: iihX7SvJpZPq7AQkAAAT] 
+30.11.2023, 14:04:38 - INFO - user Admin has joined chat room 1000. socketId: iihX7SvJpZPq7AQkAAAT 
+30.11.2023, 14:05:16 - INFO - user socketId: iihX7SvJpZPq7AQkAAAT has disconnected room 1000. 
+30.11.2023, 14:05:16 - INFO - Socket disconnected [id: iihX7SvJpZPq7AQkAAAT] 
+30.11.2023, 14:05:17 - INFO - New connected socket [id: Tt5RUQxP08dLPAreAAAV] 
+30.11.2023, 14:05:17 - INFO - user Admin has joined chat room 1000. socketId: Tt5RUQxP08dLPAreAAAV 
+30.11.2023, 14:05:22 - INFO - user socketId: Tt5RUQxP08dLPAreAAAV has disconnected room 1000. 
+30.11.2023, 14:05:22 - INFO - Socket disconnected [id: Tt5RUQxP08dLPAreAAAV] 
+30.11.2023, 14:05:23 - INFO - New connected socket [id: FklxYkK-we-02XiCAAAX] 
+30.11.2023, 14:05:23 - INFO - user Admin has joined chat room 1000. socketId: FklxYkK-we-02XiCAAAX 
+30.11.2023, 14:05:24 - INFO - Socket disconnected [id: FklxYkK-we-02XiCAAAX] 
+30.11.2023, 14:05:24 - INFO - user socketId: FklxYkK-we-02XiCAAAX has disconnected room 1000. 
+30.11.2023, 14:53:07 - INFO - New connected socket [id: ZWeNLUD9Yrsy6QypAAAZ] 
+30.11.2023, 14:53:07 - INFO - user Admin has joined chat room 1000. socketId: ZWeNLUD9Yrsy6QypAAAZ 
+30.11.2023, 14:55:56 - INFO - user socketId: ZWeNLUD9Yrsy6QypAAAZ has disconnected room 1000. 
+30.11.2023, 14:55:56 - INFO - Socket disconnected [id: ZWeNLUD9Yrsy6QypAAAZ] 
+30.11.2023, 15:19:23 - INFO - Server is running on port: 3030 

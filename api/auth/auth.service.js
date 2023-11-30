@@ -20,8 +20,6 @@ async function login(credentials) {
 }
 
 async function signup({ email, password, username }) {
-  console.log('signup');
-  
   const saltRounds = 10;
   logger.debug(
     `auth.service - signup with email: ${email}, username: ${username}`
@@ -37,7 +35,6 @@ async function signup({ email, password, username }) {
   
   const hash = await bcrypt.hash(password, saltRounds);
   
-  console.log('adding user');
   return userService.add({
     email,
     password: hash,

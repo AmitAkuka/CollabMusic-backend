@@ -47,7 +47,6 @@ async function getById(userId) {
 
 async function getUser(credentials) {
   try {
-    console.log("getuser");
     const collection = await dbService.getCollection("user");
     let user = null;
     if (credentials.username) {
@@ -78,7 +77,7 @@ async function getResetPasswordLink(user) {
     });
     const baseURL =
       process.env.NODE_ENV === "production"
-        ? "https://your-production-domain.com"
+        ? "https://novamusic.netlify.app"
         : "http://localhost:5173";
     //token containing dots which are not allowed in URL so we encode it base64.
     const link = `${baseURL}/reset-password/${btoa(_id)}/${btoa(token)}`;

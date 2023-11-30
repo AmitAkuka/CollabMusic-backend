@@ -13,12 +13,8 @@ const getResetPasswordToken = async (oldPassword, dataObj) => {
 
 const verifyToken = async (oldPassword, token) => {
   try {
-    console.log({ oldPassword, token});
-    
     const secret = JWT_SECERT + oldPassword;    
-    const verify = jwt.verify(token, secret);
-    console.log({ verify });
-    
+    const verify = jwt.verify(token, secret);    
     return verify;
   } catch (err) {
     console.log(err);
