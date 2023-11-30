@@ -7,7 +7,12 @@ async function login(req, res) {
     const user = await authService.login(credentials);
     const loginToken = authService.getLoginToken(user);
     logger.info("User login: ", user.username);
-    res.cookie("loginToken", loginToken);
+    res.cookie("loginToken", loginToken, {
+      sameSite: "None",
+      secure: true,
+      httpOnly: true,
+      maxAge: 86400000, //1day
+    });
     res.status(200).json(user);
   } catch (err) {
     logger.error("Wrong credentials" + err);
@@ -18,20 +23,25 @@ async function login(req, res) {
 async function signup(req, res) {
   try {
     const credentials = req.body;
-    console.log('signing up', credentials);
+    console.log("signing up", credentials);
     const account = await authService.signup(credentials);
     logger.debug(
       `auth.route - new account created: ` + JSON.stringify(account)
-      );
+    );
     console.log(account);
     //login upon signup
     const user = await authService.login(credentials);
     logger.info("User signup:", user);
     const loginToken = authService.getLoginToken(user);
-    res.cookie("loginToken", loginToken);
+    res.cookie("loginToken", loginToken, {
+      sameSite: "None",
+      secure: true,
+      httpOnly: true,
+      maxAge: 86400000, //1day
+    });
     res.status(200).json(user);
   } catch (err) {
-    console.log('failed to signup',err);
+    console.log("failed to signup", err);
     logger.error("Failed to signup " + err);
     res.status(500).send({ err });
   }

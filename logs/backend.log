@@ -13600,3 +13600,12 @@
 30.11.2023, 12:22:05 - INFO - user Admin has joined chat room 1000. socketId: rltZa4bcfWOI7MucAAAB 
 30.11.2023, 12:22:07 - INFO - user socketId: rltZa4bcfWOI7MucAAAB has disconnected room 1000. 
 30.11.2023, 12:22:07 - INFO - Socket disconnected [id: rltZa4bcfWOI7MucAAAB] 
+30.11.2023, 13:06:21 - INFO - Server is running on port: 3030 
+30.11.2023, 13:06:54 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 13:06:54 - INFO - User login:  | Admin 
+30.11.2023, 13:06:54 - INFO - user Admin has joined chat room 1000. socketId: GYMK-zebu0Kpt_H-AAAB 
+30.11.2023, 13:06:54 - INFO - New connected socket [id: GYMK-zebu0Kpt_H-AAAB] 
+30.11.2023, 13:14:41 - INFO - Server is running on port: 3030 
+30.11.2023, 13:14:42 - INFO - New connected socket [id: FkBC44MJgOEPg3EkAAAB] 
+30.11.2023, 13:14:50 - INFO - Server is running on port: 3030 
+30.11.2023, 13:14:51 - INFO - New connected socket [id: 1HMgRt8v_CZ11QUIAAAB] 
