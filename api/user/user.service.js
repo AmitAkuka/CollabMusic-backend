@@ -47,6 +47,7 @@ async function getById(userId) {
 
 async function getUser(credentials) {
   try {
+    console.log('getuser');
     const collection = await dbService.getCollection("user");
     let user = null;
     if (credentials.username) {

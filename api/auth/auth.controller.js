@@ -17,8 +17,8 @@ async function login(req, res) {
 
 async function signup(req, res) {
   try {
-    console.log('signing up');
     const credentials = req.body;
+    console.log('signing up', credentials);
     const account = await authService.signup(credentials);
     logger.debug(
       `auth.route - new account created: ` + JSON.stringify(account)
@@ -31,6 +31,7 @@ async function signup(req, res) {
     res.cookie("loginToken", loginToken);
     res.status(200).json(user);
   } catch (err) {
+    console.log('failed to signup',err);
     logger.error("Failed to signup " + err);
     res.status(500).send({ err });
   }
