@@ -35,6 +35,7 @@ async function connect() {
     dbConn = db;
     return db;
   } catch (err) {
+    console.log("Cannot Conncet to DB", err);
     logger.error("Cannot Connect to DB", err);
     throw err;
   }
