@@ -47,7 +47,7 @@ async function getById(userId) {
 
 async function getUser(credentials) {
   try {
-    console.log('getuser');
+    console.log("getuser");
     const collection = await dbService.getCollection("user");
     let user = null;
     if (credentials.username) {
@@ -62,7 +62,7 @@ async function getUser(credentials) {
       const { userId } = credentials;
       user = await collection.findOne({ _id: new ObjectId(userId) });
     }
-    user._id = user._id.toString();
+    if (user?._id) user._id = user._id.toString();
     return user;
   } catch (err) {
     throw err;
