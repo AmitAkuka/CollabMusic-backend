@@ -36,7 +36,8 @@ function getCorsConfig() {
 
   if (process.env.NODE_ENV === "production") {
     return cors({
-      origin: ["https://novamusic.netlify.app"],
+      // origin: ["https://novamusic.netlify.app"],
+      origin: ["*"],
       ...commonOpts,
     });
   } else {
@@ -78,5 +79,6 @@ app.get("/**", (req, res) => {
 const logger = require("./services/logger.service");
 const port = process.env.PORT || PORT;
 http.listen(port, () => {
+  console.log("Server is running on port: " + port);
   logger.info("Server is running on port: " + port);
 });
