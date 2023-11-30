@@ -13592,3 +13592,11 @@
 30.11.2023, 12:17:03 - INFO - New connected socket [id: b1n2Z_gDAcJVtF3eAAAB] 
 30.11.2023, 12:17:08 - INFO - Socket disconnected [id: b1n2Z_gDAcJVtF3eAAAB] 
 30.11.2023, 12:17:08 - INFO - user socketId: b1n2Z_gDAcJVtF3eAAAB has disconnected room 1000. 
+30.11.2023, 12:21:59 - INFO - Server is running on port: 3030 
+30.11.2023, 12:22:00 - ERROR - Failed to verify token | BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer (userId: 650d83a022cf07f05e941332)
+30.11.2023, 12:22:05 - DEBUG - auth.service - login with username: Admin (userId: 650d83a022cf07f05e941332)
+30.11.2023, 12:22:05 - INFO - User login:  | Admin (userId: 650d83a022cf07f05e941332)
+30.11.2023, 12:22:05 - INFO - New connected socket [id: rltZa4bcfWOI7MucAAAB] 
+30.11.2023, 12:22:05 - INFO - user Admin has joined chat room 1000. socketId: rltZa4bcfWOI7MucAAAB 
+30.11.2023, 12:22:07 - INFO - user socketId: rltZa4bcfWOI7MucAAAB has disconnected room 1000. 
+30.11.2023, 12:22:07 - INFO - Socket disconnected [id: rltZa4bcfWOI7MucAAAB] 
