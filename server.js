@@ -29,32 +29,24 @@ app.use(express.json({ limit: "50mb" }));
 //   app.use(cors(corsOptions));
 // }
 
-function getCorsConfig() {
-  const commonOpts = {
+let corsOptions = null;
+if (process.env.NODE_ENV === "production") {
+  corsOptions = {
+    origin: ["https://novamusic.netlify.app"],
     credentials: true,
   };
-
-  if (process.env.NODE_ENV === "production") {
-    return cors({
-      origin: ["https://novamusic.netlify.app"],
-      ...commonOpts,
-    });
-  } else {
-    return cors({
-      origin: [
-        "http://127.0.0.1:5173",
-        "http://localhost:5173",
-        "http://127.0.0.1:3000",
-        "http://localhost:3000",
-      ],
-      ...commonOpts,
-    });
-  }
+} else {
+  corsOptions = {
+    origin: [
+      "http://127.0.0.1:5173",
+      "http://localhost:5173",
+      "http://127.0.0.1:3000",
+      "http://localhost:3000",
+    ],
+    credentials: true,
+  };
 }
-
-console.log({corsConfig: getCorsConfig()});
-
-app.use(cors(getCorsConfig()));
+app.use(cors(corsOptions));
 
 const authRoutes = require("./api/auth/auth.routes");
 const userRoutes = require("./api/user/user.routes");

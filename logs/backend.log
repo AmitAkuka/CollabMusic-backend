@@ -13574,3 +13574,21 @@
 30.11.2023, 11:31:55 - INFO - Server is running on port: 3030 
 30.11.2023, 11:32:24 - INFO - Server is running on port: 3030 
 30.11.2023, 11:33:25 - INFO - Server is running on port: 3030 
+30.11.2023, 12:11:34 - INFO - Server is running on port: 3030 
+30.11.2023, 12:14:24 - INFO - Server is running on port: 3030 
+30.11.2023, 12:14:26 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 12:14:26 - ERROR - Wrong credentialsInvalid username or password 
+30.11.2023, 12:16:33 - INFO - Server is running on port: 3030 
+30.11.2023, 12:16:35 - ERROR - Wrong credentialsInvalid username or password 
+30.11.2023, 12:16:35 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 12:16:38 - ERROR - Wrong credentialsInvalid username or password 
+30.11.2023, 12:16:37 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 12:16:43 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 12:16:43 - ERROR - Wrong credentialsInvalid username or password 
+30.11.2023, 12:16:56 - INFO - Server is running on port: 3030 
+30.11.2023, 12:17:03 - DEBUG - auth.service - login with username: Admin 
+30.11.2023, 12:17:03 - INFO - User login:  | Admin 
+30.11.2023, 12:17:03 - INFO - user Admin has joined chat room 1000. socketId: b1n2Z_gDAcJVtF3eAAAB 
+30.11.2023, 12:17:03 - INFO - New connected socket [id: b1n2Z_gDAcJVtF3eAAAB] 
+30.11.2023, 12:17:08 - INFO - Socket disconnected [id: b1n2Z_gDAcJVtF3eAAAB] 
+30.11.2023, 12:17:08 - INFO - user socketId: b1n2Z_gDAcJVtF3eAAAB has disconnected room 1000. 
