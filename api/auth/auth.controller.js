@@ -17,11 +17,13 @@ async function login(req, res) {
 
 async function signup(req, res) {
   try {
+    console.log('signing up');
     const credentials = req.body;
     const account = await authService.signup(credentials);
     logger.debug(
       `auth.route - new account created: ` + JSON.stringify(account)
-    );
+      );
+    console.log(account);
     //login upon signup
     const user = await authService.login(credentials);
     logger.info("User signup:", user);

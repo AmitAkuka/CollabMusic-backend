@@ -20,21 +20,24 @@ async function login(credentials) {
 }
 
 async function signup({ email, password, username }) {
+  console.log('signup');
+  
   const saltRounds = 10;
   logger.debug(
     `auth.service - signup with email: ${email}, username: ${username}`
-  );
-  if (!email || !password || !username)
+    );
+    if (!email || !password || !username)
     return Promise.reject("Missing required signup information");
-
+  
   const emailExist = await userService.getUser({ email });
   if (emailExist) return Promise.reject("Email already registered");
-
+  
   const usernameExist = await userService.getUser({ username });
   if (usernameExist) return Promise.reject("Username already registered");
-
+  
   const hash = await bcrypt.hash(password, saltRounds);
-
+  
+  console.log('adding user');
   return userService.add({
     email,
     password: hash,
